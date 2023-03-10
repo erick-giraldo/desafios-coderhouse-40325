@@ -1,0 +1,19 @@
+<a href="/">Inicio</a>
+<h1>Usuarios</h1>
+<table id="main">
+  <tr>
+    <th>Nombre</th>
+    <th>Edad</th>
+  </tr>
+  {{#if isEmpty}}
+  <tr>
+    <td colspan="2">No hay usuarios registrados aún</td>
+  </tr>
+  {{/if}}
+  {{#each users}}
+    <tr>
+      <td>{{this.nombre}}</td>
+      <td>{{this.edad}}</td>
+    </tr>
+  {{/each}}
+</table>

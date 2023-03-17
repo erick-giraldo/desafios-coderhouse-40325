@@ -17,6 +17,15 @@ class EstudiantesController {
     res.status(200).json(result)
   }
 
+  static async getById(req, res) {
+    const { params: { id } } = req
+    const result = await EstudianteModel.findById(id)
+    if (!result) {
+      return res.status(404).end()
+    }
+    res.status(200).json(result)
+  }
+
   static async updateById(req, res) {
     const { params: { id }, body } = req
     await EstudianteModel.updateOne({ _id: id }, { $set: body })

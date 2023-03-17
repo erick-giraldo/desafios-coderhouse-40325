@@ -29,4 +29,4 @@ npm run dev
 
 ## Postman Collection
 
-En la raíz del proyecto encontrarán el archivo `Estudiantes.postman_collection.json` que les permitirá probar desde postman los endpoint del servicio.
+En la raíz del proyecto encontrarán el archivo `Colegio.postman_collection.json` que les permitirá probar desde postman los endpoint del servicio.

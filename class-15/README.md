@@ -1,4 +1,4 @@
-# API Estudiantes (Desafio clase 14)
+# API Estudiantes (Desafio clase 15)
 Este es un servicio backend que permite el **manejo de estudiantes**. Este servicio permite la `crear`, `obtener`, `actualizar` y `eliminar` **estudiantes**. Ideal para un **ecommerce**.
 
 ## Configuración
@@ -13,7 +13,7 @@ Acá estamos configurando una variable de entorno para nuestro proyecto las cual
 | ------ | ------ | ------ |
 | `NODE_PORT` | `8080` | Puerto por donde escuchará nuestro servicio. |
 | `NODE_ENV` | `local` | Entorno en el cual se ejecuta. Posibles valores: `local`, `test`, `qa`, `prod`. |
-| `MONGODB_URI` | `mongodb://localhost:27017` | Cadena de conexión a mongodb. |
+| `MONGODB_URI` | `mongodb://localhost:27017/colegio` | Cadena de conexión a mongodb. |
 
 > Nota: En el archivo `.env-example` se encuentra un ejemplo funcional de esto. Solo debe tener en cuenta que tiene mongodb corriendo en su local o cambiar la variable `MONGODB_URI` con la cadena de conexión de su instancia de mongodb.
 

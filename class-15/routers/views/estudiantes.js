@@ -6,7 +6,7 @@ const router = Router()
 
 router.get('/', async (req, res) => {
   const estudiantes = await EstudianteModel.find()
-  res.render('estudiantes', { estudiantes: estudiantes.map(es =>  es.toObject()) })
+  res.render('estudiantes', { estudiantes })
 })
 
 export default router

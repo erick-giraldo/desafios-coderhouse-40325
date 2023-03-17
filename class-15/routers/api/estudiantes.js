@@ -8,6 +8,7 @@ const router = Router()
 router
   .get('/', EstudiantesController.get)
   .post('/', uploader.single('avatar'), EstudiantesController.create)
+  .get('/:id', EstudiantesController.getById)
   .put('/:id', EstudiantesController.updateById)
   .delete('/:id', EstudiantesController.deleteById)
 

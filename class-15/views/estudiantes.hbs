@@ -1,0 +1,22 @@
+<h1>Estudiantes</h1>
+
+<table id="main">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Edad</th>
+    <th>DNI</th>
+    <th>Curso</th>
+    <th>Nota</th>
+  </tr>
+  {{#each estudiantes}}
+    <tr>
+      <td>{{this.nombre}}</td>
+      <td>{{this.apellido}}</td>
+      <td>{{this.edad}}</td>
+      <td>{{this.dni}}</td>
+      <td>{{this.curso}}</td>
+      <td>{{this.nota}}</td>
+    </tr>
+  {{/each}}
+</table>

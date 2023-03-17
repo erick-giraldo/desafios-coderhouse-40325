@@ -11,7 +11,7 @@ MONGODB_URI=mongodb://localhost:27017/colegio
 Acá estamos configurando una variable de entorno para nuestro proyecto las cuales se especifican a continuación:
 | VARIABLE | VALOR DEFAULT | DESCRIPCIÓN |
 | ------ | ------ | ------ |
-| `NODE_PORT` | `3000` | Puerto por donde escuchará nuestro servicio. |
+| `NODE_PORT` | `8080` | Puerto por donde escuchará nuestro servicio. |
 | `NODE_ENV` | `local` | Entorno en el cual se ejecuta. Posibles valores: `local`, `test`, `qa`, `prod`. |
 | `MONGODB_URI` | `mongodb://localhost:27017` | Cadena de conexión a mongodb. |
 

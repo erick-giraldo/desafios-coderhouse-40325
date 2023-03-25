@@ -6,9 +6,7 @@
     <th>Apellido</th>
     <th>Correo</th>
     <th>Genero</th>
-    <th>
-      <a href="{{sortLink}}">Calificación</a>
-    </th>
+    <th><a href="{{sortLink}}">Calificación</a></th>
     <th>Grupo</th>
   </tr>
   {{#each payload}}
@@ -24,6 +22,9 @@
 </table>
 
 <p>Página actual: {{page}}</p>
-
-<a href="{{prevLink}}" role="button" {{#isDisabled hasPrevPage}}disabled{{/isDisabled}}>Anterior</a>
-<a href="{{nextLink}}" role="button" {{#isDisabled hasNextPage}}disabled{{/isDisabled}}>Siguente</a>
+{{#if prevLink}}
+  <a href="{{prevLink}}" role="button">Anterior</a>
+{{/if}}
+{{#if nextLink}}
+  <a href="{{nextLink}}" role="button">Siguente</a>
+{{/if}}
